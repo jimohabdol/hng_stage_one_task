@@ -6,8 +6,8 @@ dotenv.config();
 
 const app = express();
 const port = process.env.PORT || 3000;
-const github_file_url = process.env.GITHUB_FILE_URL || 3000;
-const github_repo_url = process.env.GITHUB_REPO_URL || 3000;
+const github_file_url = process.env.GITHUB_FILE_URL || https://github.com/jimohabdol/hng_stage_one_task/blob/main/index.mjs;
+const github_repo_url = process.env.GITHUB_REPO_URL || https://github.com/jimohabdol/hng_stage_one_task.git;
 
 app.get('/api', (req, res) => {
   const slack_name = req.query.slack_name || 'example_name';
