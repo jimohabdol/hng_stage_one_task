@@ -25,7 +25,7 @@ app.get('/api', (req, res) => {
     status_code: 200,
   };
 
-  res.json(response);
+  res.status(200).json(response);
 });
 
 // Start the server
